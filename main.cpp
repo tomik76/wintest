@@ -1,8 +1,7 @@
-#include <iostream>
 
-using namespace std;
 #include <windows.h>
-
+typedef unsigned char byte;
+byte my_byte = 0x01;
 void TypeKeyboard(char* text) {
     for (int i = 0; text[i]; i++) {
         keybd_event(VkKeyScan(text[i]), 0, 0, 0);

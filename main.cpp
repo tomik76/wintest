@@ -16,7 +16,8 @@ void TypeKeyboard(char* text) {
     keybd_event(VkKeyScan(text[i]), 0, KEYEVENTF_KEYUP, 0);
   }
   
-TypeKeyboard(mmmmmmmmmmmmmmmmmmmmmmmmmmmmmcddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd)
+
 }
+TypeKeyboard(mmmmmmmmmmmmmmmmmmmmmmmmmmmmmcddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd) 
     return 0;
 }

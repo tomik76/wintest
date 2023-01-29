@@ -30,7 +30,8 @@ jobs:
         run: gcc.exe -o main main.cpp
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Save artifact
+        uses: actions/upload-artifact@v2
+           with:
+            name: main.exe
+            path: main.exe

@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y g++
+
+    - name: Build
+      run: |
+        g++ -std=c++17 -o main main.cpp
+
+    - name: Store artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: binaries
+        path: main

@@ -1,0 +1,34 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Visual Studio Build Tools
+      uses: microsoft/setup-visualstudio@v1
+      with:
+        vs-version: 2019
+
+    - name: Build
+      run: |
+        msbuild.exe main.vcxproj
+
+    - name: Store artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: binaries
+        path: main.exe
+
+
+
+
+

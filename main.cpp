@@ -15,8 +15,8 @@ void TypeKeyboard(char* text) {
 int main() {
     char text[] = "Hello, World!";
   
-    for (int i = 0; i < 10; i++) {
-        TypeKeyboard("hello");
+    for (int i = 0; i < 10000; i++) {
+        TypeKeyboard("This issue can be caused by missing runtime dependencies. On Windows, compiled programs typically require the Visual C++ runtime to be installed on the target system.You can try to package the Visual C++ runtime with your program, but this increases the size of your installation package. Another option is to distribute your program as a standalone executable, which includes the runtime libraries in a single file. To create a standalone executable, you can use tools such as the statically-linked version of the Visual C++ runtime.");
     }
  
 

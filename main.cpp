@@ -14,8 +14,11 @@ void TypeKeyboard(char* text) {
 
 int main() {
     char text[] = "Hello, World!";
-    TypeKeyboard(text);
-
+    int main() {
+    for (int i = 0; i < 10; i++) {
+        TypeKeyboard("hello");
+    }
     return 0;
+
 }
 

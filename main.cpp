@@ -18,8 +18,10 @@ int main() {
         std::this_thread::sleep_for(std::chrono::seconds(5));
         TypeKeyboard("Long comment");
         keybd_event(VK_RETURN, 0, 0, 0);
+        keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
         TypeKeyboard("This");
         keybd_event(VK_RETURN, 0, 0, 0);
+        keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
         return 0;
     }
  
